@@ -1,0 +1,27 @@
+@startuml
+
+title Routing RIP - Universitas Esa Unggul
+center header
+  Nama : Ananda Dwi Rizkyta
+  NIM  : 20210801197
+  UTS Jaringan Komputer Lanjut
+end header
+
+' Mendefinisikan PC dan Router
+node PC1 as "PC\n192.168.10.1/24" #cyan
+node PC2 as "PC\n192.168.20.1/24" #cyan
+node PC3 as "PC\n192.168.30.1/24" #cyan
+node R1 as "R1 KHI" #lightblue
+node R2 as "R2 KJ" #lightblue
+node R3 as "R3 CR" #lightblue
+
+' Mendefinisikan Koneksi
+PC1 --> R1 : Ethernet 2\n192.168.10.1/24
+PC2 --> R2 : Ethernet 2\n192.168.20.1/24
+PC3 --> R3 : Ethernet 2\n192.168.30.1/24
+
+R1 --> R2 : Ethernet 4\n14.14.14.1 - 14.14.14.2
+R1 --> R3 : Ethernet 3\n15.15.15.1 - 15.15.15.2
+R2 --> R3 : Ethernet 3\n13.13.13.1 - 13.13.13.2
+
+@enduml
