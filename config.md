@@ -1,6 +1,5 @@
 **Nama:** Ananda Dwi Rizkyta  
 **NIM:** 20210801197  
-**Universitas:** Universitas Esa Unggul  
 **Mata Kuliah:** UTS Jaringan Komputer Lanjut
 
 # Konfigurasi Topologi Jaringan Menggunakan RIP
